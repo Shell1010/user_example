@@ -5,6 +5,7 @@ return {
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.utility.neodim" },
   { import = "astrocommunity.colorscheme.catppuccin" },
+  { import = "astrocommunity.lsp.lsp-inlayhints-nvim" },
   { import = "astrocommunity.editing-support.auto-save-nvim"},
   { import = "astrocommunity.media.presence-nvim"},
   {

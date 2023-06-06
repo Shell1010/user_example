@@ -3,6 +3,7 @@ return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.python" },
+  { import = "astrocommunity.utility.neodim" },
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.editing-support.auto-save-nvim"},
   { import = "astrocommunity.media.presence-nvim"},

@@ -7,10 +7,19 @@ return {
   { import = "astrocommunity.editing-support.auto-save-nvim"},
   { import = "astrocommunity.media.presence-nvim"},
   {
+    "presence.nvim",
+    opts = {
+      auto_update = true,
+      client_id = "1100082565811015720",
+      neovim_image_text = "Literally me",
+      show_time = false,
+    },
+  },
+  {
     "catppuccin",
     opts = {
       integrations = {
-        sandwich = false,
+        sandwich = true,
         noice = true,
         mini = true,
         leap = true,
@@ -22,6 +31,20 @@ return {
         ts_rainbow2 = true,
       },
       transparent_background = true,
+      styles = {
+        comments = {},
+        conditionals = { "italic" },
+        loops = { "italic" },
+        functions = {},
+        keywords = { "italic" },
+        strings = {},
+        variables = {},
+        numbers = {},
+        booleans = {},
+        properties = {},
+        types = {},
+        operators = { "italic" },
+    },
     },
   },
 }

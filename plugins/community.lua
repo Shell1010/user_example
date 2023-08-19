@@ -1,12 +1,17 @@
 return {
   -- Add the community repository of plugin specifications
   "AstroNvim/astrocommunity",
-  { import = "astrocommunity.pack.rust" },
-  { import = "astrocommunity.pack.python" },
+  { import = "astrocommunity.pack.rust", enabled = "true" },
   { import = "astrocommunity.utility.neodim" },
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.lsp.lsp-inlayhints-nvim" },
   { import = "astrocommunity.editing-support.auto-save-nvim"},
+  { "auto-save.nvim",
+    opts = {
+      enabled = true,
+      trigger_events = {"InsertLeave", "BufLeave"},
+    },
+  },
   { import = "astrocommunity.media.presence-nvim"},
   {
     "presence.nvim",
@@ -47,6 +52,16 @@ return {
         types = {},
         operators = { "italic" },
     },
+    },
+  },
+  { 
+    "nvim-telescope/telescope.nvim",
+    opts = {
+      pickers = {
+        find_files = {
+          hidden = true,
+        },
+      },
     },
   },
 }
